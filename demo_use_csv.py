@@ -2,12 +2,12 @@
 import csv
 import urllib2
 
-
+# http://www.lfhacks.com/tech/python-read-specific-row-csv
 
 with open("scv.csv","r+") as f:
     c = csv.DictReader(f)
     for row in c:
         print row
-        print row["SKT"] #¶ÁÈ¡Ö¸¶¨ÁĞ
+        print row["SKT"] #è¯»å–æŒ‡å®šåˆ—
         if row["TEAM"]=="ADC":
-            print row #¶ÁÈ¡Ö¸¶¨ĞĞ
+            print row #è¯»å–æŒ‡å®šè¡Œ
